@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: darkgray;
+}
+
+.banner{
+    width: 100%;
+}
+
+div .bar{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img .icon{
+    border-radius: 50%; 
+}
+
+.bubble{
+    border-radius: 50%;
+
+    display: inline-block;
+    border: 1.2em solid black;
+}
