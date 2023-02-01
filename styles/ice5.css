@@ -7,19 +7,17 @@ body{
     width: 100%;
 }
 
-div .bar{
+div.bar{
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 1%;
 }
 
-img .icon{
-    border-radius: 50%; 
-}
-
-.bubble{
+img.circle{
+    width: 25%;
     border-radius: 50%;
-
     display: inline-block;
     border: 1.2em solid black;
+    margin: 2% auto;
 }
