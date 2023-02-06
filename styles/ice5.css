@@ -11,7 +11,7 @@ div.bar{
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 1%;
+    
 }
 
 img.circle{
@@ -19,5 +19,5 @@ img.circle{
     border-radius: 50%;
     display: inline-block;
     border: 1.2em solid black;
-    margin: 2% auto;
+    margin: 5% auto;
 }
