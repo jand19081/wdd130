@@ -1,5 +1,6 @@
 body{
     font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #fcfbfb;
     margin: 0;
     padding: 0;
@@ -87,7 +88,7 @@ nav a:hover{
 
 
 
-.book, .join{
+.book, .join, .submit{
     font-size: 18px;
     background-color: tan;
     text-decoration: none;
