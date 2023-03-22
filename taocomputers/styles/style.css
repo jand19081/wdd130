@@ -6,9 +6,12 @@
     --text-on-color: rgb(255, 55, 55);
     --text-on-white: black;
     --highlight-background-color: rgba(78, 78, 78, 0.75);
+    --color: rgba(255, 55, 55, 0.75);
 }
 
 /* Organized Alphabetically */
+
+
 
 body{
     margin: 0;
@@ -16,11 +19,38 @@ body{
     height: 100%;
 }
 
+button {
+/* This extra margin represent roughly the same space as the space
+between the labels and their text fields */
+    margin-left: 0.5em;
+    grid-row: 4/5;
+}
+
+.consulting-title{
+    color: var(--text-on-color);
+    text-align: center;
+}
+
 #content{
     background-color: var(--background-color);
 }
 
+form{
+    background-color: var(--color);
+    color: var(--text-on-white);
+}
 
+
+#feedback {
+background-color: #d9c2a3;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+padding: .5em;
+/* make this element invisible until we are ready for it */
+display: none;      
+}
 
 footer{
     background-color: var(--footer-color);
@@ -52,12 +82,54 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+form {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: .5em solid #ccc;
+    border-radius: 1em;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
 header{
     background-color: var(--header-color);
     color: var(--text-on-color);
     display: grid;
     grid-template-columns: 150px auto;
     height: -100px;
+}
+
+input:focus, textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+input, textarea {
+/* To make sure that all text fields have the same font settings
+By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
 }
 
 .logo{
@@ -72,6 +144,21 @@ header{
     
 }
 
+.mail{
+    grid-row: 2/3;
+}
+
+.message{
+    grid-row: 3/4;
+}
+
+.moveDown {
+    margin-top: 3em;
+}
+
+.name{
+    grid-row: 1/2;
+}
 
 nav {
     display: flex;
@@ -102,10 +189,29 @@ nav input[type=text] {
     font-size: 17px;
   }
 
+
+.submit {
+/* Align buttons with the text fields */
+    padding-left: auto; /* same size as the label elements */
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
 .title{
     color: var(--text-on-color);
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 /* When the screen is less than 900px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 900px) {
