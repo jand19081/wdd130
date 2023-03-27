@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Consulting</title>
+    <title>Tau Consulting</title>
 
 </head>
 <body>
@@ -35,9 +35,23 @@
             <label for="mail">Email:</label>
             <input type="email" id="mail" name="user_email" value="jdoe@farmers.com" />
           </li>
+
+          <li class="type">
+            <p>Select a type: </p>
+            <label class="container">Software
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Hardware
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                
+          </li>
+
           <li class="message">
             <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message" >This is my reason for contacting.</textarea>
+            <textarea id="msg" name="user_message" >What would you like help with?</textarea>
           </li>
 
           <li class="button">
@@ -46,6 +60,11 @@
           
         </ul>
       </form>
+
+      <div class="more-info">
+        <h2>More Information:</h2>
+        <p>Tau Consulting is </p>
+      </div>
       
 </main>
 
