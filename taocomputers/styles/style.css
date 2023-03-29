@@ -7,6 +7,7 @@
     --text-on-white: black;
     --highlight-background-color: rgba(78, 78, 78, 0.75);
     --color: rgba(255, 55, 55, 0.75);
+    --heading-font: "Brush Script MT", cursive;
     --font: 'Times New Roman', Times, serif;
 }
 
@@ -15,9 +16,15 @@
 
 
 body{
+    font-family: var(--font);
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.bottom-bar {
+    grid-row: 3/4;
+    grid-column: 1/4;
 }
 
 button {
@@ -173,12 +180,40 @@ form li + li {
     margin-top: 1em;
 }
 
+h1, h2, h3, h4 h5, h6 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+#hardware {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
 header{
     background-color: var(--header-color);
     color: var(--text-on-color);
     display: grid;
     grid-template-columns: 150px auto;
     height: -100px;
+}
+
+hr {
+    color: var(--text-on-color);
+    margin: 0;
+    padding: 0;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-rows: 10fr 80fr 10fr;
+    grid-template-columns: 45fr 10fr 45fr;
+    color: var(--text-on-color);
 }
 
 input:focus, textarea:focus {
@@ -207,9 +242,6 @@ label {
     text-align: right;
 }
 
-li {
-    
-}
 
 .logo{
     width: 80px;
@@ -250,14 +282,20 @@ nav a:hover{
 }
 
 nav input[type=text] {
+    color: var(--color);
+    background-color: #999;
     float: right;
     padding: 6px;
     border: none;
     margin-top: 1em;
     margin: 2em;
     font-size: 17px;
-  }
+}
 
+#software {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
 
 .submit {
 /* Align buttons with the text fields */
@@ -277,7 +315,11 @@ textarea {
 }
 
 .title {
+    grid-column: 1/4;
+    grid-row: 1/2;
     color: var(--text-on-color);
+    text-align: center;
+    font-size: 2em;
 }
 
 .type {
@@ -294,6 +336,15 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.vl {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 0;
+    padding: 0;
+    border-left: .2em solid var(--text-on-color);
+    height: 100%;
 }
 
 /* When the screen is less than 900px wide, stack the links and the search field vertically instead of horizontally */
