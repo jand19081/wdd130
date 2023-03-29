@@ -334,7 +334,7 @@ textarea {
 ul {
     grid-column: 2/3;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
