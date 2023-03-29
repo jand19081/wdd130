@@ -23,7 +23,7 @@ body{
 }
 
 .bottom-bar {
-    grid-row: 3/4;
+    grid-row: 4/4;
     grid-column: 1/4;
 }
 
@@ -166,7 +166,7 @@ footer p a:hover{
 
 form {
     display: grid;
-    grid-template-columns: 10fr 1fr 10fr;
+    grid-template-columns: 10fr 90fr 10fr;
     /* Center the form on the page */
     margin: 0 auto;
     width: 70%;
@@ -227,7 +227,7 @@ By default, textareas have a monospace font */
     font: 1em sans-serif;
 
     /* Uniform text field size */
-    width: 300px;
+    width: 80%;
     box-sizing: border-box;
 
     /* Match form field borders */
@@ -339,7 +339,7 @@ ul {
 }
 
 .vl {
-    grid-row: 2/3;
+    grid-row: 2/4;
     grid-column: 2/3;
     margin: 0;
     padding: 0;
