@@ -23,8 +23,11 @@ a:visited {
     text-decoration: none;
 }
 
+
+
 body{
     font-family: var(--font);
+    color: var(--text-on-color);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -224,6 +227,7 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 h1{
+    color:var(--text-on-color);
     font-size: 5em;
 }
 
@@ -271,6 +275,12 @@ By default, textareas have a monospace font */
 
     /* Match form field borders */
     border: 1px solid #999;
+}
+
+.keyboard-card {
+    grid-column: 2/3;
+    padding: 1em;
+    
 }
 
 
@@ -337,6 +347,12 @@ nav input[type=text] {
     width: 20%;
 }
 
+.phone-card {
+    grid-column: 3/4;
+    padding: 1em;
+}
+
+
 .project-card {
     color: inherit;
     text-decoration: none;
@@ -344,7 +360,22 @@ nav input[type=text] {
     grid-column: 4/5;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: 10fr 40fr 40fr 10fr;
+}
 
+.projects-title{
+    grid-column: 1/5;
+    color: var(--text-on-color);
+    text-align: center;
+}
+
+.slide-card {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 1em;
+}
 
 .submit {
 /* Align buttons with the text fields */
